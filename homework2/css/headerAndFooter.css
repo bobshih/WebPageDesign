@@ -1,0 +1,63 @@
+body {
+    background-color: #fe7701;
+    margin: auto;
+}
+.inner_Div {
+    padding: 30px 150px 0px 150px;
+    box-sizing: border-box;
+    width: 1260px;
+    height: 1340px;
+    margin: 0px auto;
+}
+#wrapper {
+    /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+    min-height: 100%;
+    /* 位置設為relative, 作為footer區塊位置的參考 */
+    position: relative;
+}
+#footer {
+    background-color: #404040;
+    clear: both;
+    height: 50px;
+    width: 100%;
+    /* 設定footer絕對位置在底部 */
+    position: absolute;
+    bottom: 0;
+    /* 展開footer寬度 */
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+.header_link {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 0px 0px 25px 10px;
+}
+.box {
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: -5px 5px rgba(165, 77, 5, 0.5);
+    margin: 0px auto;
+    height: inherit;
+}
+.header_article {
+    width: 960px;
+    height: 50px;
+}
+.bookmark {
+    margin: 16px 0px 16px 30px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fe7701;
+}
+.footer_Div {
+    height: 100%;
+    background-color: inherit;
+    padding: 16px 295px 16px 180px;
+    box-sizing: border-box;
+    width: 1260px;
+    margin: 0px auto;
+}
