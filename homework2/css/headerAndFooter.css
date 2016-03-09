@@ -1,6 +1,10 @@
 body {
     background-color: #fe7701;
     margin: auto;
+    height: 100%;
+}
+html {
+    height: 100%;
 }
 .inner_Div {
     padding: 30px 150px 0px 150px;
@@ -16,14 +20,12 @@ body {
     position: relative;
 }
 #footer {
-    background-color: #404040;
     clear: both;
     height: 50px;
     width: 100%;
     /* 設定footer絕對位置在底部 */
     position: absolute;
     bottom: 0;
-    /* 展開footer寬度 */
 }
 a {
     display: inline-block;
@@ -55,7 +57,7 @@ a {
 }
 .footer_Div {
     height: 100%;
-    background-color: inherit;
+    background-color: #404040;
     padding: 16px 295px 16px 180px;
     box-sizing: border-box;
     width: 1260px;
