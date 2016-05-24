@@ -1,0 +1,15 @@
+/*nav hover affect*/
+
+.title a:hover {
+    background-color: #CFFA96;
+}
+.title:hover {
+    background-color: #CFFA96;
+}
+
+/*more button hover affect*/
+
+.more_btn:hover {
+    background: black;
+    color: white;
+}

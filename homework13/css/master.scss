@@ -1,0 +1,343 @@
+$large: 1280px;
+$medium: 768px;
+$small: 480px;
+body,
+html {
+    font-size: 100%;
+    background: -webkit-linear-gradient(white, rgb(249, 237, 105));
+    background: -o-linear-gradient(white, rgb(249, 237, 105));
+    background: -moz-linear-gradient(white, rgb(249, 237, 105));
+    background: linear-gradient(white, rgb(249, 237, 105));
+    // background-color: red;
+    width: 1280px;
+    height: 1653px;
+    margin: auto;
+    box-sizing: border-box;
+}
+@media screen and (max-width: $large) {
+    body,
+    html {
+        // background-color: green;
+        width: $medium;
+        height: auto;
+    }
+}
+@media screen and (max-width: $medium) {
+    body,
+    html {
+        // background-color: pink;
+        width: $small;
+        height: auto;
+    }
+}
+@media screen and (max-width: $small) {
+    body,
+    html {
+        // background-color: yellow;
+        width: $small;
+    }
+}
+/*slider*/
+.slider {
+    position: relative;
+    width: 100%;
+    height: 545px;
+    border-bottom: 1px solid #ddd;
+}
+@media screen and (max-width: $large) {
+    .slider {
+        height: 327px;
+    }
+}
+@media screen and (max-width: $medium) {
+    .slider {
+        height: 205px;
+    }
+}
+@media screen and (max-width: $small) {
+    .slider {
+        height: 205px;
+    }
+}
+.slide-img {
+    text-align: right;
+}
+.slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.active-slide {
+    display: block;
+}
+.pic {
+    width: inherit;
+    height: inherit;
+}
+.pic_box {
+    width: inherit;
+    height: inherit;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+/*slide controller */
+.slider-nav {
+    text-align: center;
+    margin: auto;
+}
+.arrow-prev {
+    margin-right: 45px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 9px;
+}
+.arrow-next {
+    margin-left: 45px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 9px;
+}
+.arrow {
+    width: 13px;
+    height: 23px;
+}
+.disabled-arrow {
+    pointer-events: none;
+}
+.slider-dots {
+    list-style: none;
+    display: inline-block;
+    padding-left: 0;
+    margin-top: 5px;
+}
+.slider-dots li {
+    color: #bbbcbc;
+    display: inline;
+    font-size: 30px;
+    margin-right: 5px;
+}
+.slider-dots li.active-dot {
+    color: #363636;
+}
+/*nav part*/
+a {
+    text-decoration: none;
+}
+.logo {
+    width: 270px;
+    height: 69px;
+    margin-top: 3px;
+    float: left;
+}
+.line {
+    margin: 0 auto;
+    background-color: black;
+    height: 1px;
+    clear: both;
+}
+.box {
+    border: 2px solid black;
+}
+.title {
+    width: 100px;
+    height: 52px;
+    margin-top: 17px;
+    text-align: center;
+    line-height: 52px;
+    float: left;
+    font-size: 150%;
+}
+@media screen and (max-width: $large) {
+    .title {
+        width: 96px;
+        height: 48px;
+    }
+}
+@media screen and (max-width: $medium) {
+    .title {
+        clear:both;
+    }
+}
+@media screen and (max-width: $small) {
+    .title {
+        clear:both;
+    }
+}
+/*contents*/
+.content_wrapper {
+    width: 780px;
+    float: left;
+}
+@media screen and (max-width: $large) {
+    .content_wrapper {
+        width: 384px;
+    }
+}
+@media screen and (max-width: $medium) {
+    .content_wrapper {
+        // height: 205px;
+    }
+}
+.album_wrapper {
+    margin-top: 23px;
+    width: 372px;
+    height: 439px;
+    float: left;
+    box-sizing: border-box;
+}
+@media screen and (max-width: $large) {
+    .album_wrapper {
+        height: 141px;
+    }
+}
+@media screen and (max-width: $medium) {
+    .album_wrapper {
+        // height: 205px;
+    }
+}
+@media screen and (max-width: $small) {
+    .album_wrapper {
+        // height: 205px;
+    }
+}
+.right_box{
+    margin-left: 36px;
+}
+@media screen and (max-width: $large) {
+    .right_box {
+        margin-left: 0px;
+    }
+}
+
+.album_wrapper p {
+    font-size: calc(400%/3);
+    margin: 10px 0;
+}
+.album {
+    width: 372px;
+    height: 340px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: $large) {
+    .album {
+        float: left;
+        width: 137px;
+        height: 141px;
+    }
+}
+@media screen and (max-width: $medium) {
+    .album {
+        // height: 205px;
+    }
+}
+@media screen and (max-width: $small) {
+    .album {
+        // height: 205px;
+    }
+}
+.more_btn {
+    width: 94px;
+    height: 50px;
+    float: right;
+    text-align: center;
+    line-height: 50px;
+}
+a .more_btn {
+    font-size: 200%;
+}
+/* searching bar*/
+.searching_bar_wrapper {
+    width: 372px;
+    float: right;
+}
+@media screen and (max-width: $large) {
+    .searching_bar_wrapper {
+        width: 270px;
+    }
+}
+@media screen and (max-width: $medium) {
+    .searching_bar_wrapper {
+        float: left;
+    }
+}
+@media screen and (max-width: $small) {
+    .searching_bar_wrapper {
+        float: left;
+    }
+}
+.part {
+    margin-top: 23px;
+    width: 100%;
+}
+@media screen and (max-width: $large) {
+    .part {
+        width: 400px;
+    }
+}
+.searching_bar {
+    display: block;
+    float: left;
+    margin: 0;
+    width: 332px;
+    height: 40px;
+}
+
+.searching_btn {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(240, 138, 93);
+}
+/*video*/
+.video {
+    border: 1px solid rgb(240, 138, 93);
+    width: 372px;
+}
+@media screen and (max-width: $medium) {
+    .video {
+        display: none;
+    }
+    .part p {
+        display: none;
+    }
+}
+@media screen and (max-width: $small) {
+    .video {
+        display: none;
+    }
+    .part p {
+        display: none;
+    }
+}
+/*musics*/
+table {
+    width: 372px;
+    border: 2px solid rgb(127, 127, 127);
+}
+.cover {
+    width: 180px;
+    height: 180px;
+}
+.searching_bar_wrapper p {
+    margin: 10px 0;
+}
+/*footer*/
+footer {
+    /*background: -webkit-linear-gradient(rgb(249, 237, 105), #FA7E0A);
+    background: -o-linear-gradient(rgb(249, 237, 105), #FA7E0A);
+    background: -moz-linear-gradient(rgb(249, 237, 105), #FA7E0A);
+    background: linear-gradient(rgb(249, 237, 105), #FA7E0A);*/
+    padding-top: 10px;
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+footer span {
+    display: block;
+    width: 100%;
+    background-color: #FA7E0A;
+    color: #F8FF95;
+    border-radius: 5px;
+}
